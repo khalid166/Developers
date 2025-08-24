@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo { font-weight: bold; font-size: 1.2rem; }
+.tag { background: #eee; padding: 2px 6px; border-radius: 5px; font-size: 0.8rem; margin-left: 4px; }
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-actions .btn {
+  margin-left: 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #eef3ff, #ffffff);
+}
+
+.hero h1 { font-size: 2rem; margin-bottom: 10px; }
+.hero p { max-width: 700px; margin: 0 auto 20px; }
+
+.hero-buttons .btn { margin: 5px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.problems { flex: 2; }
+.challenge {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1rem;
+}
+
+.problem-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.problem-card h3 { margin-top: 0; }
+.problem-card small { display: block; margin-top: .5rem; font-size: .85rem; color: #555; }
+
+.btn {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn.small { font-size: 0.85rem; padding: .3rem .6rem; }
+.btn.primary { background: #0055ff; }
+.btn.danger { background: #ff5733; }
+.btn.profile { background: #444; }
+
+.tags { margin-bottom: .5rem; }
+.tag.easy { background: #d4f7dc; color: #167d2c; padding: 2px 6px; border-radius: 5px; }
+.tag.medium { background: #fff3cd; color: #856404; padding: 2px 6px; border-radius: 5px; }
+.tag.hard { background: #f8d7da; color: #721c24; padding: 2px 6px; border-radius: 5px; }
+
+.progress {
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: .5rem 0;
+  height: 12px;
+}
+.progress-bar {
+  background: #28a745;
+  height: 100%;
+}
+
+.success { color: #28a745; }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #003366;
+  color: white;
+  margin-top: 1rem;
+}
